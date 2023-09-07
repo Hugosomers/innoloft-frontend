@@ -175,7 +175,6 @@ const Company = () => {
             <Map
               lat={Number(productCurrentData?.company?.address?.latitude)}
               lng={Number(productCurrentData?.company?.address?.longitude)}
-              key='AIzaSyCm0Y0lGBWBIUmt8scDy3KDdHFwxIrgg5M'
             />
           )}
       </div>
