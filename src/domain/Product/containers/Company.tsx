@@ -90,7 +90,7 @@ const Company = () => {
               className='text-sm font-normal leading-6 text-justify'
               style={{ color: '#6B7280' }}
               dangerouslySetInnerHTML={{
-                __html: productCurrentData?.description,
+                __html: productCurrentData?.description || '',
               }}
             />
           )}

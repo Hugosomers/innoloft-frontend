@@ -22,26 +22,30 @@ const Details = () => {
         <DetailBox
           icon={<Gear />}
           title='Technology'
-          options={productCurrentData?.categories?.map(
-            (model: { id: number; name: string }) => model.name
-          )}
+          options={
+            productCurrentData?.categories?.map(
+              (model: { id: number; name: string }) => model.name
+            ) as string[]
+          }
         />
         <DetailBox
           icon={<Strategy />}
           title='Business Model'
-          options={productCurrentData?.businessModels?.map(
-            (model: { id: number; name: string }) => model.name
-          )}
+          options={
+            productCurrentData?.businessModels?.map(
+              (model: { id: number; name: string }) => model.name
+            ) as string[]
+          }
         />
         <DetailBox
           icon={<Clock />}
           title='Implementation Time'
-          options={[productCurrentData?.trl?.name]}
+          options={[productCurrentData?.trl?.name] as string[]}
         />
         <DetailBox
           icon={<Investor />}
           title='Costs'
-          options={[productCurrentData?.investmentEffort]}
+          options={[productCurrentData?.investmentEffort] as string[]}
         />
       </div>
     </Card>
